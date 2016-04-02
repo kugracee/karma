@@ -4,16 +4,20 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-body { 
-	background-color: LightGray;
-	 }
+body {
+	background-color:lightgray;
+}
 
 .top-navigation {
 		background-color: #fff;
-		position: fixed;
 		width: 100%;
 		z-index: 9999;
+		border-bottom: 1px solid #DDD;
+		vertical-align: baseline;
+		box-sizing: border-box;
+		position: fixed;
+		margin: 0px;
+		position: relative;
 
 }
 .top-navigation .logo {
@@ -38,7 +42,7 @@ body {
 		-webkit-font-smoothing: antialiased;
 }
 .top-navigation .links li {
-    display: inline;
+    display: inline-block;
     margin-left: 50px;
 }
 .top-navigation .links li:hover {
@@ -46,7 +50,7 @@ body {
     color: #333333;
 }
 
-.top-navigation .links .active {
+.top-navigation .links > .active {
 	color: #4c5058;
 	font-weight: 500;
 }
@@ -59,17 +63,19 @@ body {
 	background-size: cover;
 	height: 45.938rem;
 	background-position: center;
+	overflow: auto;
 
 }
 
 .introduction .content {
-	margin-top:17.5rem;
-	font-size:3.125rem;
+	margin: 0 auto;
+	width: 970px;
 	display: block;
 	vertical-align: baseline;
 	box-sizing: border-box;
 	font-size: 100%;
-
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
 }
 
 .introduction h1,
@@ -77,13 +83,30 @@ body {
 	color: #fff;
 	text-align: center;
 	font-weight: 300;
-	padding: 0;
+	padding: 0 1rem;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-family: 'Roboto', sans-serif;
+	}
+
+.button {
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	width: 9.688rem;
+	background-color: #f15a29;
+	margin: 0 auto;
+	border-color: #f15a29;
+	color: white;
 }
+
 
 .cases {
 	background-color: #fff;
 	overflow: hidden;
 	padding-bottom: 5rem;
+	display: block;
 
 }
 .cases .devices {
@@ -92,4 +115,5 @@ body {
 	border: 1px solid black;
 	box-sizing: border-box;
 	height: 4em;
+	list-style: none;
 }
